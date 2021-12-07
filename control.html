@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control</title>
+    <link rel="stylesheet" href="control.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+</head>
+<body>
+    <p>On/Off</p>
+    <label class="switch">
+        <input type="checkbox" id="onoff" onclick="on()">
+        <span class="slider round"></span>
+      </label> 
+      <p>Players</p>
+      <form>
+        <input class="input" type="text" id="text" placeholder="Team/Player"/> 
+        <input class="button" type="submit" value="Set" onclick="passvalues();"/>
+        </form>
+        <p>Board Color</p>
+        <div class="color-picker"></div>
+        <p>Text Color Toggel</p>
+        <label class="switch">
+            <input type="checkbox" id="color" onclick="color()">
+            <span class="slider round"></span>
+          </label> 
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+<script src="./control.js"></script>  
+<script src="./update.js"></script>  
+</body>
+</html>
